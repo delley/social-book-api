@@ -3,6 +3,7 @@ package br.com.froli.socialbooks.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
 import br.com.froli.socialbooks.domain.Livro;
@@ -35,7 +36,7 @@ public class LivrosService {
 	public void deletar(Long id) {
 		try {
 			livrosRepository.delete(id);
-		} catch (LivroNaoEncontradoException e) {
+		} catch (EmptyResultDataAccessException e) {
 			throw new LivroNaoEncontradoException("O livro não foi encontrado");
 		}
 	}
