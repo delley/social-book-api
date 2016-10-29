@@ -1,4 +1,4 @@
-package br.com.froli.socialbooks.services;
+package br.com.froli.socialbooks.services.exceptions;
 
 public class LivroNaoEncontradoException extends RuntimeException {
 

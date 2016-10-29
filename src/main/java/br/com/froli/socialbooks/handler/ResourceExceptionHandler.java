@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import br.com.froli.socialbooks.domain.DetalhesErro;
-import br.com.froli.socialbooks.services.LivroNaoEncontradoException;
+import br.com.froli.socialbooks.services.exceptions.LivroNaoEncontradoException;
 
 @ControllerAdvice
 public class ResourceExceptionHandler {

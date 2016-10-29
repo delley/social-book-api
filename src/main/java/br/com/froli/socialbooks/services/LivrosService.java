@@ -11,6 +11,7 @@ import br.com.froli.socialbooks.domain.Comentario;
 import br.com.froli.socialbooks.domain.Livro;
 import br.com.froli.socialbooks.repository.ComentariosRepository;
 import br.com.froli.socialbooks.repository.LivrosRepository;
+import br.com.froli.socialbooks.services.exceptions.LivroNaoEncontradoException;
 
 @Service
 public class LivrosService {
